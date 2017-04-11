@@ -1,4 +1,4 @@
-<project name="Sample usage of Salesforce Ant tasks" default="deployUnpackaged" basedir="../SFDC_Deployment/BTDemo/src" xmlns:sf="antlib:com.salesforce">
+<project name="Sample usage of Salesforce Ant tasks" default="deployUnpackaged" basedir="C:\Users\vasudhar\.jenkins\jobs\SFDC_Deployment\workspace\BTDemo\src" xmlns:sf="antlib:com.salesforce">
 
     <property file="build.properties"/>
     <property environment="env"/>
@@ -46,7 +46,7 @@
 
     <!-- Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged and run tests in this organization's namespace only-->
     <target name="deployUnpackaged">
-      <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="BTDemo/src"   rollbackOnError="true"/>
+      <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="C:\Users\vasudhar\.jenkins\jobs\SFDC_Deployment\workspace\BTDemo\src"   rollbackOnError="true"/>
 	  
     </target> <!--testlevel="RunLocalTests" -->
 
